@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Ôn tập</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container" style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h1 style="text-align: center; color: #333;">Học đi sắp thi rồi</h1>
+        <select onchange="confirmRedirect(this.value);">
+            <option selected disabled>Môn sinh</option>
+            <option value="./sinh/index2.html">trắc nhiệm bao gồm đúng sai- tl ngắn</option>
+            <option value="./sinh/index3.html">Mỗi trắc nhiệm</option>
+            <option value="./sinh/index4.html">đúng sai -tl ngắn</option>
+        </select><br><br>
+        <!-- <select onchange="confirmRedirect(this.value);">
+            <option selected disabled>Môn sinh</option>
+            <option value="./sinh/index2.html">trắc nhiệm bao gồm đúng sai- tl ngắn</option>
+            <option value="./sinh/index3.html">Mỗi trắc nhiệm</option>
+            <option value="./sinh/index4.html">đúng sai -tl ngắn</option>
+        </select> -->
+    </div>
+    <div class="cuoi">
+        <p class="contract">nếu có lỗi gì thì báo cho tớ nhé</p>
+          <div class="author_links">
+            <a href="https://www.facebook.com/quang301226" target="_blank" class="author_link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+            </a>
+      </div>
+
+    
+    <style>
+    .cuoi {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+        padding: 15px;
+        border-top: 1px solid #ddd;
+        background-color: #f2f2f2; /* Màu nền nhẹ nhàng hơn */
+        box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng để nổi bật */
+    }
+    
+    .cuoi p {
+        margin: 0; /* Loại bỏ khoảng cách không cần thiết */
+        font-style: italic; /* Thêm kiểu chữ nghiêng để nhấn mạnh */
+    }
+    .author_links {
+          gap: 10px;
+          width: 100%;
+          overflow: scroll;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0;
+      }
+
+      .author_links::-webkit-scrollbar {
+          display: none;
+      }
+
+      .author_link {
+          width: 40px;
+          height: 40px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.54);
+      }
+
+      .author_link svg {
+          width: 16px;
+          fill: #fff;
+
+      }
+      .contract {
+        text-align: center;
+        font-size: 20px;
+      }
+
+
+    </style>
+    
+</body>
+<script>
+    function confirmRedirect(url) {
+        if (confirm("Bạn có chắc chắn muốn chuyển đến trang này không?")) {
+            window.location.href = url;
+        }
+    }
+</script>
+</html>
